@@ -1,0 +1,8 @@
+____ ____ ____ _  _ _ ____ ____    ___  _ ____ ____ ____ _  _ ____ ____ _   _
+[__  |___ |__/ |  | | |    |___    |  \ | [__  |    |  | |  | |___ |__/  \_/
+___] |___ |  \  \/  | |___ |___    |__/ | ___] |___ |__|  \/  |___ |  \   |
+
+${application.title} ${application.version}
+Powered by AzvTech
+Spring Boot Version :: ${spring-boot.version}
+___

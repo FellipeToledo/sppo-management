@@ -1,0 +1,26 @@
+server:
+  port: 8090
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  application:
+    name: datasource-service
+  config:
+    import: optional:configserver:http://localhost:8888
+  datasource:
+    url: jdbc:h2:mem:datasources
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto:create
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
